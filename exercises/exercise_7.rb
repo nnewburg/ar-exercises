@@ -10,3 +10,6 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+response = $stdin.gets.chomp
+@store7 = Store.create(name: response)
+puts @store7.errors.messages
